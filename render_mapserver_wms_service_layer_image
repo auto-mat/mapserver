@@ -1,0 +1,1 @@
+curl "http://localhost:8001/mapserv?map=/opt/mapserver/base_maps.map&SERVICE=WMS&REQUEST=Getmap&VERSION=1.1.1&LAYERS=Mimovegetacni_letecke_snimkovani&SRS=EPSG:3857&BBOX=1580784.029757,6431299.916350,1640176.934719,6478860.648344&FORMAT=PNG&WIDTH=800&HEIGHT=600&STYLES=" --output mimovegetacni_letecke_snimkovani.png

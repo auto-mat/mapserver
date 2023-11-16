@@ -1,0 +1,120 @@
+MAP
+  NAME "Czechia base maps with SRS EPSG:3857"
+  EXTENT 1580784.029757 6431299.916350 1640176.934719 6478860.648344
+  UNITS DD
+  SIZE 800 600
+
+  IMAGETYPE PNG24
+
+  PROJECTION
+    "init=epsg:3857"
+  END
+
+  WEB
+    METADATA
+      ows_enable_request "*"
+    END
+    # TEMPLATE "empty"
+  END
+
+  LAYER # Prague - Mimovegetacni letecke snimkovani
+    NAME         "Mimovegetacni_letecke_snimkovani"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/imgs/services/ort/mimovegetacni_letecke_snimkovani/ImageServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.1.1"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Zakladni mapa MTVU
+    NAME         "Zakladni_mapa_MTVU"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/dtmp/mtvu/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.1.1"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Zakladni mapa MTVU - cernobila
+    NAME         "Zakladni_mapa_MTVU_-_cernobila"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/dtmp/mtvu_bw/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.1.1"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Generel páteřních a hlavních cyklistických tras hl. m. Prahy 2012 (aktualizace 2019)
+    NAME         "Generel_paternich_a_hlavnich_cyklistickych_tras_hl_m_Prahy_2012_-_aktualizace_2019"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/dop/cyklogenerel/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.1.1"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Vrstevnice v intervalu 1 metru a zvýrazněné vrstevnice po 5-ti metrech s kótou
+    NAME         "Vrstevnice_1_m"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/d3m/vrstevnice/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.1.1"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+END
