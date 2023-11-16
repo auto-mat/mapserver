@@ -4,13 +4,13 @@
 
 ```bash
 # Build Docker image
-docker buildx build .
+docker buildx build -t mapserver .
 
 # Run Docker Mapserver container
 docker run -it --rm \
 --publish=8000:80 \
 --name=mapserver \
-<YOUR_BUILDED_DOCKER_IMAGE_ID> OR auto0mat/mapserver:0
+mapserver OR auto0mat/mapserver:0
 
 # Render WMS service file base_maps.map Mimovegetacni_letecke_snimkovani layer image
 test@test:~$ curl "http://localhost:8001/mapserv\
