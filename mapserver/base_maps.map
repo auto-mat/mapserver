@@ -28,7 +28,7 @@ MAP
     METADATA
       "wms_srs" "EPSG:5514"
       "wms_name" "0"
-      "wms_server_version" "1.1.1"
+      "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
 
@@ -48,7 +48,7 @@ MAP
     METADATA
       "wms_srs" "EPSG:5514"
       "wms_name" "0"
-      "wms_server_version" "1.1.1"
+      "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
 
@@ -68,7 +68,7 @@ MAP
     METADATA
       "wms_srs" "EPSG:5514"
       "wms_name" "0"
-      "wms_server_version" "1.1.1"
+      "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
 
@@ -88,7 +88,7 @@ MAP
     METADATA
       "wms_srs" "EPSG:5514"
       "wms_name" "0"
-      "wms_server_version" "1.1.1"
+      "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
 
@@ -108,7 +108,7 @@ MAP
     METADATA
       "wms_srs" "EPSG:5514"
       "wms_name" "0"
-      "wms_server_version" "1.1.1"
+      "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
 
