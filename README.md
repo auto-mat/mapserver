@@ -6,11 +6,11 @@
 # Build Docker image
 docker buildx build -t mapserver .
 
-# Run Docker Mapserver container
+# Run Docker container
 docker run -it --rm \
 --publish=8000:80 \
 --name=mapserver \
-mapserver OR auto0mat/mapserver:0
+mapserver OR auto0mat/mapserver:latest
 
 # Render WMS service file base_maps.map Mimovegetacni_letecke_snimkovani layer image
 test@test:~$ curl "http://localhost:8001/mapserv\
