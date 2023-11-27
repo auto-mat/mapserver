@@ -197,4 +197,64 @@ MAP
     END
   END
 
+  LAYER # Prague - Hranice
+    NAME         "Hranice_Prahy"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/map/zakladni_mapa/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "0"
+      "wms_server_version" "1.3.0"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Mestske casti
+    NAME         "Mestske_casti_Prahy"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/map/zakladni_mapa/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "19"
+      "wms_server_version" "1.3.0"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
+  LAYER # Prague - Spravni obvody
+    NAME         "Spravni_obvody_Prahy"
+    TYPE         RASTER
+    OFFSITE      0 0 0
+    STATUS       ON
+    CONNECTIONTYPE WMS
+    CONNECTION "https://gs-pub.praha.eu/arcgis/services/map/zakladni_mapa/MapServer/WMSServer?"
+
+    METADATA
+      "wms_srs" "EPSG:5514"
+      "wms_name" "18"
+      "wms_server_version" "1.3.0"
+      "wms_format" "image/png"
+    END
+
+    PROJECTION
+      "init=epsg:5514"
+    END
+  END
+
 END
