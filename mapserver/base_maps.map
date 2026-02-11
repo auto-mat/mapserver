@@ -27,7 +27,7 @@ MAP
 
     METADATA
       "wms_srs" "EPSG:5514"
-      "wms_name" "0"
+      "wms_name" "mimovegetacni_letecke_snimkovani"
       "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
@@ -207,7 +207,7 @@ MAP
 
     METADATA
       "wms_srs" "EPSG:5514"
-      "wms_name" "0"
+      "wms_name" "20"
       "wms_server_version" "1.3.0"
       "wms_format" "image/png"
     END
